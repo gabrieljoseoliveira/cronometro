@@ -1,4 +1,4 @@
-const relógio = document.querySelector(`.relógio`);
+const relogio = document.querySelector(`.relogio`);
 
 document.addEventListener(`click`, (e) => {
 
@@ -6,19 +6,19 @@ document.addEventListener(`click`, (e) => {
 
     if (el.classList.contains(`iniciar`)) {
 
-        relógio.classList.remove(`pausado`);
+        relogio.classList.remove(`pausado`);
         clearInterval(timer);
         iniciarR();
 
     } else if (el.classList.contains(`pausar`)) {
 
-        relógio.classList.add(`pausado`);
+        relogio.classList.add(`pausado`);
         clearInterval(timer);
 
     } else if (el.classList.contains(`zerar`)) {
 
         segundos = 0;
-        relógio.innerHTML = `00:00:00`;
+        relogio.innerHTML = `00:00:00`;
 
     }
 
@@ -32,7 +32,7 @@ const iniciarR = () => {
     timer = setInterval(() => {
 
         segundos++;
-        relógio.innerHTML = recebeSegundos(segundos);
+        relogio.innerHTML = recebeSegundos(segundos);
 
     }, 1000);
 
