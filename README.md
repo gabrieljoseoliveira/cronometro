@@ -1,3 +1,3 @@
 # Cronômetro
 ## Página web com um cronômetro.
-### link: https://gjoliveira.github.io/cronometro/
+### Link: https://gjoliveira.github.io/cronometro/
